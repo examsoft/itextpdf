@@ -136,7 +136,7 @@ public class Div extends AbstractTagProcessor {
             }
 
             List<Element> l = new ArrayList<Element>(1);
-            l.add(div);
+            l.add(p);
 			return l;
 		} catch (NoCustomContextException e) {
 			throw new RuntimeWorkerException(LocaleMessages.getInstance().getMessage(LocaleMessages.NO_CUSTOM_CONTEXT), e);
