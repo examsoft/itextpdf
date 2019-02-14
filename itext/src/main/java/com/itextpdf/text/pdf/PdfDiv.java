@@ -291,7 +291,10 @@ public class PdfDiv implements Element, Spaceable, IAccessibleElement {
      */
     public boolean process(final ElementListener listener) {
         try {
-            return listener.add(this);
+            for(Element e: this.getContent()) {
+                listener.add(e);
+            }
+            return true;
         }
         catch(DocumentException de) {
             return false;

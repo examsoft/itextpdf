@@ -11,7 +11,7 @@
 
   <groupId>com.itextpdf.tool</groupId>
   <artifactId>xmlworker</artifactId>
-  <version>5.5.14-SNAPSHOT</version>
+  <version>5.5.20</version>
 
   <name>iText XML Worker</name>
   <description>Parses XML to PDF, with CSS support, using iText</description>
@@ -72,7 +72,7 @@
     <dependency>
       <groupId>com.itextpdf</groupId>
       <artifactId>itextpdf</artifactId>
-      <version>${project.version}</version>
+      <version>5.5.13</version>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -186,6 +186,14 @@
           <updateDependencies>true</updateDependencies>
         </configuration>
       </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>7</source>
+                <target>7</target>
+            </configuration>
+        </plugin>
 
     </plugins>
   </build>

@@ -804,7 +804,8 @@ public class PdfDocument extends Document {
                 case Element.DIV:
                     ensureNewLine();
                     flushLines();
-                    addDiv((PdfDiv)element);
+                    //addDiv((PdfDiv)element);
+                    element.process(this);
                     pageEmpty = false;
                     //newLine();
                     break;
